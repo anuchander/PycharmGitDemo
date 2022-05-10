@@ -17,6 +17,13 @@ class Employee:
     def apply_raise(self):
         self.pay=int(self.pay*self.raise_amount)
 
+    def __repr__(self):
+        return "Employee('{}', '{}', {})".format(self.first, self.last, self.pay)
+
+    def __str__(self):
+        return '{}' - '{}'.format(self.fullname(), self.email)
+
+
     @classmethod
     def set_raise_amount(cls,amount):
         cls.raise_amount=amount
@@ -37,6 +44,12 @@ emp_str_1='John-Doe-70000'
 emp_str_2='Steve-Smith-30000'
 emp_str_3='Jane-Doe-90000'
 
+print("Printing str1")
+print(emp_str_1)
+print("*********")
+print("Printing str(emp_str_1)")
+print(emp_str_1.__str__())
+print("*********")
 new_emp_1=Employee.from_string(emp_str_1)
 print(new_emp_1.first)
 print(new_emp_1.email)

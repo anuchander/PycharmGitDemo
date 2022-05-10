@@ -1,25 +1,29 @@
 class car:
     def __init__(self, speed, color):
-        self.__speed__=speed
-        self.__color__=color
+        self.__speed=speed
+        self.__color=color
 
     def set_speed(self, value):
-        self.__speed__=value
+        self.__speed=value
 
     def get_speed(self):
-        return self.__speed__
+        return self.__speed
 
     def set_color(self, value):
-        self.__color__ = value
+        self.__color = value
 
     def get_color(self):
-        return self.__color__
+        return self.__color
 
 
 honda=car(180,'Red')
-audi=car(250,'blue')
-print(honda)
+print(honda.get_speed())
+print(honda.get_color())
 
-print(honda.speed)
-print(honda.color)
+honda.set_speed(280)
+print(honda.get_color())
+print(honda.get_speed())
+
+audi=car(250,'blue')
+
 
