@@ -6,5 +6,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="PythonProject1" />
     <orderEntry type="module" module-name="pythonProjectSelenium" />
+    <orderEntry type="module" module-name="puthon_unittest_framework" />
   </component>
 </module>
